@@ -107,3 +107,12 @@ body {
     background-color: #fe424d !important;
     border:none !important;
 }
+
+/* show page */
+.show-img{
+    height:30vh;
+}
+.btn-danger {
+  background-color: #dc3545;
+  border: none;
+}
