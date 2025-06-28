@@ -10,6 +10,7 @@
                             <label for="title" class="form-label">Title</label>
                             <input id="title" name="listing[title]" placeholder="Enter your title" type="text"
                                 class="form-control" required>
+                                <div class="invalid-feedback">Please enter title</div>
                         </div>
 
                         <div class="mb-3">
@@ -23,6 +24,7 @@
                             <textarea id="description" name="listing[description]"
                                 placeholder="Enter a short description" class="form-control" rows="3"
                                 required></textarea>
+                                <div class="invalid-feedback">Please enter a short description</div>
                         </div>
 
                         <div class="row">
@@ -30,6 +32,7 @@
                                 <label for="price" class="form-label">Price</label>
                                 <input id="price" name="listing[price]" placeholder="Enter your price" type="number"
                                     class="form-control" required>
+                                    <div class="invalid-feedback">Please enter a valid price</div>
                             </div>
 
 
@@ -38,12 +41,14 @@
                                 <label for="country" class="form-label">Country</label>
                                 <input id="country" name="listing[country]" placeholder="Enter your country" type="text"
                                     class="form-control" required>
+                                    <div class="invalid-feedback">Please enter a valid country</div>
                             </div>
                         </div>
                         <div class="mb-3">
                             <label for="location" class="form-label">Location</label>
                             <input id="location" name="listing[location]" placeholder="Enter your location" type="text"
                                 class="form-control" required>
+                                <div class="invalid-feedback">Please enter valid location</div>
                         </div>
                         <button type="submit" class="btn btn-dark add-btn">Add</button>
                     </form>
