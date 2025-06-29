@@ -5,7 +5,7 @@ const sampleListings = [
       "Escape to this charming beachfront cottage for a relaxing getaway. Enjoy stunning ocean views and easy access to the beach.",
     image: {
       filename: "listingimage",
-      url: "https://images.unsplash.com/photo-1552733407-5d5c46c3bb3b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHRyYXZlbHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60https://unsplash.com/photos/five-3-storey-houses-in-lined-on-street-zh_ofCt2r9c",
+      url: "https://unsplash.com/photos/a-lake-surrounded-by-trees-with-mountains-in-the-background-7VotVatHM7Q",
     },
     price: 1500,
     location: "Malibu",
@@ -29,7 +29,7 @@ const sampleListings = [
       "Unplug and unwind in this peaceful mountain cabin. Surrounded by nature, it's a perfect place to recharge.",
     image: {
       filename: "listingimage",
-      url: "https://images.unsplash.com/photo-1571896349842-33c89424de2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8aG90ZWxzfGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60",
+      url: "https://unsplash.com/photos/a-lake-surrounded-by-trees-with-mountains-in-the-background-7VotVatHM7Q",
     },
     price: 1000,
     location: "Aspen",
