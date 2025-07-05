@@ -21,15 +21,25 @@ const userRouter = require("./routes/user.js");
 
 const dbUrl = process.env.ATLASDB_URL;
 
+async function main() {
+    await mongoose.connect(dbUrl, {
+        useNewUrlParser: true,
+        useUnifiedTopology: true,
+        serverSelectionTimeoutMS: 60000,
+        socketTimeoutMS: 60000,
+    });
+}
+
 main().then(()=>{
     console.log("Connected to DB.")
 }).catch((err)=>{
     console.log(err);
 });
 
-async function main() {
-    await mongoose.connect(dbUrl);
-}
+// async function main() {
+//     await mongoose.connect(dbUrl);
+// }
+
 
 app.set("view engine","ejs");
 app.set("views", path.join(__dirname,"views"));
@@ -65,6 +75,10 @@ const sessionOptions={
 // app.get("/",(req,res)=>{
 //     res.send("Hi!! I am root.");
 // });
+app.get('/', (req, res) => {
+  res.redirect('/listings');
+});
+
 
 app.use(session(sessionOptions));
 app.use(flash());
